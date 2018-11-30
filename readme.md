@@ -1,13 +1,8 @@
 
-<img align="right" width="80" src="https://user-images.githubusercontent.com/1472352/48118952-d4f4db80-e2a8-11e8-8d0a-37b24c071b12.png"/>
-
-<h1 align="left"><a href="https://yike.io">Yike.io</a></h1>
-
 [![Build Status](https://travis-ci.org/overtrue/api.yike.io.svg?branch=master)](https://travis-ci.org/overtrue/api.yike.io)
 
-此项目为 https://yike.io 的后端 API，基于 Laravel 5 开发。
+此项目为后端 API，基于 Laravel 5 开发。
 
-> 🏵前端源码：https://github.com/overtrue/yike.io
 
 开源中国 Gitee 仓库：[![Fork me on Gitee](https://gitee.com/overtrue/api.yike.io/widgets/widget_3.svg)](https://gitee.com/overtrue/api.yike.io)
 
@@ -33,7 +28,7 @@
 
 克隆源代码到本地：
 
-    > git clone git@github.com:overtrue/api.yike.io.git
+    > git clone git@github.com:purewater2011/Wt-background-demo.git
 
 #### 配置本地的 Homestead 环境
 
@@ -47,12 +42,12 @@ homestead edit
 
 ```
 folders:
-    - map: ~/my-path/api.yike.io/ # 你本地的项目目录地址
-      to: /home/vagrant/api.yike.io
+    - map: ~/my-path/api.homestead.test/ # 你本地的项目目录地址
+      to: /home/vagrant/api.homestead.test
 
 sites:
-    - map: api.yike.io.test
-      to: /home/vagrant/api.yike.io/public
+    - map: api.homestead.test
+      to: /home/vagrant/api.homestead.test/public
 
 databases:
     - api_yike_io
@@ -81,10 +76,10 @@ cp .env.example .env
 你可以根据情况修改 `.env` 文件里的内容，如数据库连接、缓存、邮件设置等：
 
 ```
-APP_URL=http://api.yike.io.test
+APP_URL=http://api.homestead.test
 ...
 DB_HOST=localhost
-DB_DATABASE=api_yike_io
+DB_DATABASE=api_homestead
 DB_USERNAME=homestead
 DB_PASSWORD=secret
 ```
@@ -115,12 +110,12 @@ $ php artisan passport:install
 
 #### 配置 hosts 文件
 
-    echo "192.168.10.10   api.yike.io.test" | sudo tee -a /etc/hosts
+    echo "192.168.10.10   api.homestead.test" | sudo tee -a /etc/hosts
 
 
 ### 链接入口
 
-* 首页地址：http://api.yike.io.test
+* 首页地址：http://api.homestead.test
 * 管理后台：没做
 
 管理员账号请自己添加 UserSeeder 创建。
