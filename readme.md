@@ -1,10 +1,7 @@
 
-[![Build Status](https://travis-ci.org/overtrue/api.yike.io.svg?branch=master)](https://travis-ci.org/overtrue/api.yike.io)
 
 此项目为后端 API，基于 Laravel 5 开发。
 
-
-开源中国 Gitee 仓库：[![Fork me on Gitee](https://gitee.com/overtrue/api.yike.io/widgets/widget_3.svg)](https://gitee.com/overtrue/api.yike.io)
 
 > 🚨此次开源只是应大家的要求，所以请不要联系我咨询任何使用问题，遇到问题请自行解决，熟读 Laravel 文档。
 > 如果你有兴趣参与改进，请直接 PR 即可。
@@ -50,7 +47,7 @@ sites:
       to: /home/vagrant/api.homestead.test/public
 
 databases:
-    - api_yike_io
+    - api_homestead_test
 ```
 
 3). 应用修改
