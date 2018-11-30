@@ -33,4 +33,7 @@
         <env name="DB_DATABASE" value=":memory:"/>
         <ini name="memory_limit" value="512M" />
     </php>
+    <listeners>
+        <listener class="NunoMaduro\Collision\Adapters\Phpunit\Listener" />
+    </listeners>
 </phpunit>

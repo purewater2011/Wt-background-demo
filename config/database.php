@@ -75,6 +75,23 @@ return [
             'charset' => 'utf8',
             'prefix' => '',
         ],
+
+        'swoole' => [
+            'driver'    => 'mysql',
+            'host'      => env('DB_MY_CONN_HOST', 'localhost'),
+            'port'      => env('DB_MY_CONN_PORT', 3306),
+            'database'  => env('DB_MY_CONN_DATABASE', 'forge'),
+            'username'  => env('DB_MY_CONN_USERNAME', 'forge'),
+            'password'  => env('DB_MY_CONN_PASSWORD', ''),
+            'charset'   => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix'    => '',
+            'strict'    => false,
+            'options'   => [
+                // 开启持久连接
+                \PDO::ATTR_PERSISTENT => true,
+            ],
+        ]
     ],
 
     /*
@@ -116,6 +133,13 @@ return [
             'password' => env('REDIS_PASSWORD', null),
             'port' => env('REDIS_PORT', 6379),
             'database' => 1,
+        ],
+        'swoole' => [
+            'host'       => env('REDIS_HOST', 'localhost'),
+            'password'   => env('REDIS_PASSWORD', null),
+            'port'       => env('REDIS_PORT', 6379),
+            'database'   => 0,
+            'persistent' => true, // 开启持久连接
         ],
     ],
 ];

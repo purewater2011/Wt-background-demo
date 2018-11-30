@@ -9,6 +9,8 @@
  * with this source code in the file LICENSE.
  */
 
+use Overtrue\EasySms\Strategies\RandomStrategy;
+
 return [
     'timeout' => 5.0,
     'default' => [
